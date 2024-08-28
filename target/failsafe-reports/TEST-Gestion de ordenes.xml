@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="Gestion de ordenes" time="9.362" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\test-classes;C:\Users\MSI\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\MSI\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\MSI\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-core\2.4.51\serenity-core-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-model\2.4.51\serenity-model-2.4.51.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\MSI\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\MSI\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\MSI\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\MSI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\MSI\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\MSI\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\MSI\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\MSI\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\MSI\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\MSI\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\MSI\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MSI\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\MSI\.m2\repository\com\thoughtworks\xstream\xstream\1.4.17\xstream-1.4.17.jar;C:\Users\MSI\.m2\repository\io\github\x-stream\mxparser\1.2.1\mxparser-1.2.1.jar;C:\Users\MSI\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\MSI\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;C:\Users\MSI\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\MSI\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\MSI\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\MSI\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\MSI\.m2\repository\org\asciidoctor\asciidoctorj\2.5.1\asciidoctorj-2.5.1.jar;C:\Users\MSI\.m2\repository\org\asciidoctor\asciidoctorj-api\2.5.1\asciidoctorj-api-2.5.1.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby\9.2.17.0\jruby-9.2.17.0.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby-core\9.2.17.0\jruby-core-9.2.17.0.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-netdb\1.2.0\jnr-netdb-1.2.0.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-enxio\0.32.3\jnr-enxio-0.32.3.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-unixsocket\0.38.5\jnr-unixsocket-0.38.5.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-posix\3.1.4\jnr-posix-3.1.4.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-constants\0.10.1\jnr-constants-0.10.1.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1-native.jar;C:\Users\MSI\.m2\repository\org\jruby\joni\joni\2.1.31\joni-2.1.31.jar;C:\Users\MSI\.m2\repository\org\jruby\jcodings\jcodings\1.0.46\jcodings-1.0.46.jar;C:\Users\MSI\.m2\repository\org\jruby\dirgra\0.3\dirgra-0.3.jar;C:\Users\MSI\.m2\repository\com\headius\invokebinder\1.11\invokebinder-1.11.jar;C:\Users\MSI\.m2\repository\com\headius\options\1.4\options-1.4.jar;C:\Users\MSI\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\MSI\.m2\repository\com\martiansoftware\nailgun-server\0.9.1\nailgun-server-0.9.1.jar;C:\Users\MSI\.m2\repository\com\headius\backport9\1.8\backport9-1.8.jar;C:\Users\MSI\.m2\repository\javax\annotation\javax.annotation-api\1.3.1\javax.annotation-api-1.3.1.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby-stdlib\9.2.17.0\jruby-stdlib-9.2.17.0.jar;C:\Users\MSI\.m2\repository\net\bytebuddy\byte-buddy\1.11.1\byte-buddy-1.11.1.jar;C:\Users\MSI\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.1\byte-buddy-agent-1.11.1.jar;C:\Users\MSI\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-reports\2.4.51\serenity-reports-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-stats\2.4.51\serenity-stats-2.4.51.jar;C:\Users\MSI\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.5.0\kotlin-stdlib-1.5.0.jar;C:\Users\MSI\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\MSI\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.0\kotlin-stdlib-common-1.5.0.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-reports-configuration\2.4.51\serenity-reports-configuration-2.4.51.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;C:\Users\MSI\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;C:\Users\MSI\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-report-resources\2.4.51\serenity-report-resources-2.4.51.jar;C:\Users\MSI\.m2\repository\com\google\code\gson\gson\2.8.7\gson-2.8.7.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.4\jackson-core-2.12.4.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.4\jackson-databind-2.12.4.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.4\jackson-annotations-2.12.4.jar;C:\Users\MSI\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\MSI\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\MSI\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\MSI\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\MSI\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\MSI\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\MSI\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.47.1\htmlunit-2.47.1.jar;C:\Users\MSI\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\MSI\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.47.0\htmlunit-core-js-2.47.0.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.47.1\neko-htmlunit-2.47.1.jar;C:\Users\MSI\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\MSI\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.7.0\htmlunit-cssparser-1.7.0.jar;C:\Users\MSI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\MSI\.m2\repository\com\shapesecurity\salvation2\3.0.0\salvation2-3.0.0.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.36.v20210114\websocket-client-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-client\9.4.36.v20210114\jetty-client-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-http\9.4.36.v20210114\jetty-http-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-util\9.4.36.v20210114\jetty-util-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-io\9.4.36.v20210114\jetty-io-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.36.v20210114\websocket-common-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.36.v20210114\websocket-api-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.47.1\htmlunit-driver-2.47.1.jar;C:\Users\MSI\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;C:\Users\MSI\.m2\repository\io\appium\java-client\7.5.1\java-client-7.5.1.jar;C:\Users\MSI\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\MSI\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\MSI\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\MSI\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\MSI\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\MSI\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\MSI\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\MSI\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\MSI\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\MSI\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\MSI\.m2\repository\com\paulhammant\ngwebdriver\1.1.5\ngwebdriver-1.1.5.jar;C:\Users\MSI\.m2\repository\joda-time\joda-time\2.8.2\joda-time-2.8.2.jar;C:\Users\MSI\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\MSI\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\MSI\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\MSI\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\MSI\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\MSI\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\MSI\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\MSI\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-junit\2.4.51\serenity-junit-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-rest-assured\2.4.51\serenity-rest-assured-2.4.51.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\MSI\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay\2.4.51\serenity-screenplay-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay-rest\2.4.51\serenity-screenplay-rest-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-cucumber6\2.4.51\serenity-cucumber6-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.4.51\serenity-screenplay-webdriver-2.4.51.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\MSI\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\MSI\.m2\repository\io\cucumber\datatable-matchers\3.4.0\datatable-matchers-3.4.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\datatable\3.4.0\datatable-3.4.0.jar;C:\Users\MSI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\MSI\.m2\repository\io\rest-assured\rest-assured\4.3.2\rest-assured-4.3.2.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\MSI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\MSI\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\MSI\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\MSI\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\MSI\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\MSI\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy\3.0.6\groovy-3.0.6.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.6\groovy-xml-3.0.6.jar;C:\Users\MSI\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\MSI\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MSI\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;C:\Users\MSI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Users\MSI\.jdks\corretto-11.0.19\bin"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\MSI\AppData\Local\Temp\surefire6056069555537604846 2024-08-28T12-02-19_024-jvmRun1 surefire18062358875315614197tmp surefire_07641555745354448991tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\test-classes;C:\Users\MSI\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\MSI\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\MSI\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-core\2.4.51\serenity-core-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-model\2.4.51\serenity-model-2.4.51.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\MSI\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\MSI\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\MSI\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\MSI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\MSI\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\MSI\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\MSI\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\MSI\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\MSI\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\MSI\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\MSI\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MSI\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\MSI\.m2\repository\com\thoughtworks\xstream\xstream\1.4.17\xstream-1.4.17.jar;C:\Users\MSI\.m2\repository\io\github\x-stream\mxparser\1.2.1\mxparser-1.2.1.jar;C:\Users\MSI\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\MSI\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;C:\Users\MSI\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\MSI\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\MSI\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\MSI\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\MSI\.m2\repository\org\asciidoctor\asciidoctorj\2.5.1\asciidoctorj-2.5.1.jar;C:\Users\MSI\.m2\repository\org\asciidoctor\asciidoctorj-api\2.5.1\asciidoctorj-api-2.5.1.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby\9.2.17.0\jruby-9.2.17.0.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby-core\9.2.17.0\jruby-core-9.2.17.0.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-netdb\1.2.0\jnr-netdb-1.2.0.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-enxio\0.32.3\jnr-enxio-0.32.3.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-unixsocket\0.38.5\jnr-unixsocket-0.38.5.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-posix\3.1.4\jnr-posix-3.1.4.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-constants\0.10.1\jnr-constants-0.10.1.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1-native.jar;C:\Users\MSI\.m2\repository\org\jruby\joni\joni\2.1.31\joni-2.1.31.jar;C:\Users\MSI\.m2\repository\org\jruby\jcodings\jcodings\1.0.46\jcodings-1.0.46.jar;C:\Users\MSI\.m2\repository\org\jruby\dirgra\0.3\dirgra-0.3.jar;C:\Users\MSI\.m2\repository\com\headius\invokebinder\1.11\invokebinder-1.11.jar;C:\Users\MSI\.m2\repository\com\headius\options\1.4\options-1.4.jar;C:\Users\MSI\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\MSI\.m2\repository\com\martiansoftware\nailgun-server\0.9.1\nailgun-server-0.9.1.jar;C:\Users\MSI\.m2\repository\com\headius\backport9\1.8\backport9-1.8.jar;C:\Users\MSI\.m2\repository\javax\annotation\javax.annotation-api\1.3.1\javax.annotation-api-1.3.1.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby-stdlib\9.2.17.0\jruby-stdlib-9.2.17.0.jar;C:\Users\MSI\.m2\repository\net\bytebuddy\byte-buddy\1.11.1\byte-buddy-1.11.1.jar;C:\Users\MSI\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.1\byte-buddy-agent-1.11.1.jar;C:\Users\MSI\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-reports\2.4.51\serenity-reports-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-stats\2.4.51\serenity-stats-2.4.51.jar;C:\Users\MSI\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.5.0\kotlin-stdlib-1.5.0.jar;C:\Users\MSI\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\MSI\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.0\kotlin-stdlib-common-1.5.0.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-reports-configuration\2.4.51\serenity-reports-configuration-2.4.51.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;C:\Users\MSI\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;C:\Users\MSI\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-report-resources\2.4.51\serenity-report-resources-2.4.51.jar;C:\Users\MSI\.m2\repository\com\google\code\gson\gson\2.8.7\gson-2.8.7.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.4\jackson-core-2.12.4.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.4\jackson-databind-2.12.4.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.4\jackson-annotations-2.12.4.jar;C:\Users\MSI\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\MSI\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\MSI\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\MSI\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\MSI\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\MSI\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\MSI\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.47.1\htmlunit-2.47.1.jar;C:\Users\MSI\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\MSI\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.47.0\htmlunit-core-js-2.47.0.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.47.1\neko-htmlunit-2.47.1.jar;C:\Users\MSI\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\MSI\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.7.0\htmlunit-cssparser-1.7.0.jar;C:\Users\MSI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\MSI\.m2\repository\com\shapesecurity\salvation2\3.0.0\salvation2-3.0.0.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.36.v20210114\websocket-client-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-client\9.4.36.v20210114\jetty-client-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-http\9.4.36.v20210114\jetty-http-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-util\9.4.36.v20210114\jetty-util-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-io\9.4.36.v20210114\jetty-io-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.36.v20210114\websocket-common-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.36.v20210114\websocket-api-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.47.1\htmlunit-driver-2.47.1.jar;C:\Users\MSI\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;C:\Users\MSI\.m2\repository\io\appium\java-client\7.5.1\java-client-7.5.1.jar;C:\Users\MSI\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\MSI\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\MSI\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\MSI\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\MSI\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\MSI\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\MSI\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\MSI\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\MSI\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\MSI\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\MSI\.m2\repository\com\paulhammant\ngwebdriver\1.1.5\ngwebdriver-1.1.5.jar;C:\Users\MSI\.m2\repository\joda-time\joda-time\2.8.2\joda-time-2.8.2.jar;C:\Users\MSI\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\MSI\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\MSI\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\MSI\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\MSI\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\MSI\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\MSI\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\MSI\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-junit\2.4.51\serenity-junit-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-rest-assured\2.4.51\serenity-rest-assured-2.4.51.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\MSI\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay\2.4.51\serenity-screenplay-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay-rest\2.4.51\serenity-screenplay-rest-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-cucumber6\2.4.51\serenity-cucumber6-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.4.51\serenity-screenplay-webdriver-2.4.51.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\MSI\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\MSI\.m2\repository\io\cucumber\datatable-matchers\3.4.0\datatable-matchers-3.4.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\datatable\3.4.0\datatable-3.4.0.jar;C:\Users\MSI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\MSI\.m2\repository\io\rest-assured\rest-assured\4.3.2\rest-assured-4.3.2.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\MSI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\MSI\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\MSI\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\MSI\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\MSI\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\MSI\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy\3.0.6\groovy-3.0.6.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.6\groovy-xml-3.0.6.jar;C:\Users\MSI\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\MSI\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MSI\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;C:\Users\MSI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\MSI"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.module.path" value="C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\api-test-qa-lab-1.0-SNAPSHOT.jar"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Users\MSI\.jdks\corretto-11.0.19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M5\surefire-booter-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M5\surefire-api-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M5\surefire-logger-api-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M4\surefire-shared-utils-3.0.0-M4.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M5\surefire-extensions-spi-3.0.0-M5.jar;C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\test-classes;C:\Users\MSI\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\MSI\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\MSI\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-core\2.4.51\serenity-core-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-model\2.4.51\serenity-model-2.4.51.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\MSI\.m2\repository\commons-net\commons-net\3.6\commons-net-3.6.jar;C:\Users\MSI\.m2\repository\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar;C:\Users\MSI\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\MSI\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\MSI\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\MSI\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\MSI\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\MSI\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\MSI\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\MSI\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\MSI\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\MSI\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\MSI\.m2\repository\com\thoughtworks\xstream\xstream\1.4.17\xstream-1.4.17.jar;C:\Users\MSI\.m2\repository\io\github\x-stream\mxparser\1.2.1\mxparser-1.2.1.jar;C:\Users\MSI\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\MSI\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\MSI\.m2\repository\com\typesafe\config\1.3.1\config-1.3.1.jar;C:\Users\MSI\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\MSI\.m2\repository\org\awaitility\awaitility\4.0.3\awaitility-4.0.3.jar;C:\Users\MSI\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\MSI\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\MSI\.m2\repository\org\asciidoctor\asciidoctorj\2.5.1\asciidoctorj-2.5.1.jar;C:\Users\MSI\.m2\repository\org\asciidoctor\asciidoctorj-api\2.5.1\asciidoctorj-api-2.5.1.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby\9.2.17.0\jruby-9.2.17.0.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby-core\9.2.17.0\jruby-core-9.2.17.0.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-netdb\1.2.0\jnr-netdb-1.2.0.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-enxio\0.32.3\jnr-enxio-0.32.3.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-unixsocket\0.38.5\jnr-unixsocket-0.38.5.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-posix\3.1.4\jnr-posix-3.1.4.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jnr-constants\0.10.1\jnr-constants-0.10.1.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1.jar;C:\Users\MSI\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1-native.jar;C:\Users\MSI\.m2\repository\org\jruby\joni\joni\2.1.31\joni-2.1.31.jar;C:\Users\MSI\.m2\repository\org\jruby\jcodings\jcodings\1.0.46\jcodings-1.0.46.jar;C:\Users\MSI\.m2\repository\org\jruby\dirgra\0.3\dirgra-0.3.jar;C:\Users\MSI\.m2\repository\com\headius\invokebinder\1.11\invokebinder-1.11.jar;C:\Users\MSI\.m2\repository\com\headius\options\1.4\options-1.4.jar;C:\Users\MSI\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\MSI\.m2\repository\com\martiansoftware\nailgun-server\0.9.1\nailgun-server-0.9.1.jar;C:\Users\MSI\.m2\repository\com\headius\backport9\1.8\backport9-1.8.jar;C:\Users\MSI\.m2\repository\javax\annotation\javax.annotation-api\1.3.1\javax.annotation-api-1.3.1.jar;C:\Users\MSI\.m2\repository\org\jruby\jruby-stdlib\9.2.17.0\jruby-stdlib-9.2.17.0.jar;C:\Users\MSI\.m2\repository\net\bytebuddy\byte-buddy\1.11.1\byte-buddy-1.11.1.jar;C:\Users\MSI\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.1\byte-buddy-agent-1.11.1.jar;C:\Users\MSI\.m2\repository\org\objenesis\objenesis\3.1\objenesis-3.1.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-reports\2.4.51\serenity-reports-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-stats\2.4.51\serenity-stats-2.4.51.jar;C:\Users\MSI\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.5.0\kotlin-stdlib-1.5.0.jar;C:\Users\MSI\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\MSI\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.0\kotlin-stdlib-common-1.5.0.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-reports-configuration\2.4.51\serenity-reports-configuration-2.4.51.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-all\0.34.30\flexmark-all-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark\0.34.30\flexmark-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.34.30\flexmark-ext-abbreviation-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.34.30\flexmark-ext-admonition-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.34.30\flexmark-ext-anchorlink-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.34.30\flexmark-ext-aside-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.34.30\flexmark-ext-attributes-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.34.30\flexmark-ext-autolink-0.34.30.jar;C:\Users\MSI\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.34.30\flexmark-ext-definition-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.34.30\flexmark-ext-emoji-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.34.30\flexmark-ext-enumerated-reference-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.34.30\flexmark-ext-escaped-character-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.34.30\flexmark-ext-footnotes-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.34.30\flexmark-ext-gfm-issues-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.34.30\flexmark-ext-gfm-strikethrough-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.34.30\flexmark-ext-gfm-tables-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.34.30\flexmark-ext-gfm-tasklist-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.34.30\flexmark-ext-gfm-users-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.34.30\flexmark-ext-gitlab-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.34.30\flexmark-ext-jekyll-front-matter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.34.30\flexmark-ext-jekyll-tag-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.34.30\flexmark-ext-media-tags-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-test-util\0.34.30\flexmark-test-util-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.34.30\flexmark-ext-ins-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.34.30\flexmark-ext-xwiki-macros-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.34.30\flexmark-ext-superscript-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.34.30\flexmark-ext-tables-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.34.30\flexmark-ext-toc-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.34.30\flexmark-ext-typographic-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.34.30\flexmark-ext-wikilink-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.34.30\flexmark-ext-yaml-front-matter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.34.30\flexmark-ext-youtube-embedded-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-formatter\0.34.30\flexmark-formatter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-html-parser\0.34.30\flexmark-html-parser-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.34.30\flexmark-jira-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.34.30\flexmark-pdf-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\0.0.1-RC13\openhtmltopdf-core-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\0.0.1-RC13\openhtmltopdf-pdfbox-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\pdfbox\2.0.8\pdfbox-2.0.8.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\fontbox\2.0.8\fontbox-2.0.8.jar;C:\Users\MSI\.m2\repository\org\apache\pdfbox\xmpbox\2.0.8\xmpbox-2.0.8.jar;C:\Users\MSI\.m2\repository\de\rototor\pdfbox\graphics2d\0.12\graphics2d-0.12.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\0.0.1-RC13\openhtmltopdf-rtl-support-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\ibm\icu\icu4j\59.1\icu4j-59.1.jar;C:\Users\MSI\.m2\repository\com\openhtmltopdf\openhtmltopdf-jsoup-dom-converter\0.0.1-RC13\openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.34.30\flexmark-profile-pegdown-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-util\0.34.30\flexmark-util-0.34.30.jar;C:\Users\MSI\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.34.30\flexmark-youtrack-converter-0.34.30.jar;C:\Users\MSI\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-report-resources\2.4.51\serenity-report-resources-2.4.51.jar;C:\Users\MSI\.m2\repository\com\google\code\gson\gson\2.8.7\gson-2.8.7.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.4\jackson-core-2.12.4.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.4\jackson-databind-2.12.4.jar;C:\Users\MSI\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.4\jackson-annotations-2.12.4.jar;C:\Users\MSI\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\MSI\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\MSI\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\MSI\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\MSI\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\MSI\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\MSI\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.47.1\htmlunit-2.47.1.jar;C:\Users\MSI\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\MSI\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.47.0\htmlunit-core-js-2.47.0.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.47.1\neko-htmlunit-2.47.1.jar;C:\Users\MSI\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\MSI\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\MSI\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.7.0\htmlunit-cssparser-1.7.0.jar;C:\Users\MSI\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\MSI\.m2\repository\com\shapesecurity\salvation2\3.0.0\salvation2-3.0.0.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.4.36.v20210114\websocket-client-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-client\9.4.36.v20210114\jetty-client-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-http\9.4.36.v20210114\jetty-http-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-util\9.4.36.v20210114\jetty-util-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\jetty-io\9.4.36.v20210114\jetty-io-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.4.36.v20210114\websocket-common-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.4.36.v20210114\websocket-api-9.4.36.v20210114.jar;C:\Users\MSI\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\MSI\.m2\repository\org\seleniumhq\selenium\htmlunit-driver\2.47.1\htmlunit-driver-2.47.1.jar;C:\Users\MSI\.m2\repository\com\codeborne\phantomjsdriver\1.4.4\phantomjsdriver-1.4.4.jar;C:\Users\MSI\.m2\repository\io\appium\java-client\7.5.1\java-client-7.5.1.jar;C:\Users\MSI\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\MSI\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\MSI\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\MSI\.m2\repository\net\sf\opencsv\opencsv\2.0\opencsv-2.0.jar;C:\Users\MSI\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\MSI\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\MSI\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\MSI\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\MSI\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\MSI\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\MSI\.m2\repository\com\paulhammant\ngwebdriver\1.1.5\ngwebdriver-1.1.5.jar;C:\Users\MSI\.m2\repository\joda-time\joda-time\2.8.2\joda-time-2.8.2.jar;C:\Users\MSI\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\MSI\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\MSI\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\MSI\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\MSI\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\MSI\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\MSI\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\MSI\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-junit\2.4.51\serenity-junit-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-rest-assured\2.4.51\serenity-rest-assured-2.4.51.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\MSI\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay\2.4.51\serenity-screenplay-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay-rest\2.4.51\serenity-screenplay-rest-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-cucumber6\2.4.51\serenity-cucumber6-2.4.51.jar;C:\Users\MSI\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\2.4.51\serenity-screenplay-webdriver-2.4.51.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\MSI\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\MSI\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\MSI\.m2\repository\io\cucumber\datatable-matchers\3.4.0\datatable-matchers-3.4.0.jar;C:\Users\MSI\.m2\repository\io\cucumber\datatable\3.4.0\datatable-3.4.0.jar;C:\Users\MSI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\MSI\.m2\repository\org\apache\commons\commons-csv\1.5\commons-csv-1.5.jar;C:\Users\MSI\.m2\repository\io\rest-assured\rest-assured\4.3.2\rest-assured-4.3.2.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\MSI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\MSI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\MSI\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\MSI\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\MSI\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\MSI\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\MSI\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy\3.0.6\groovy-3.0.6.jar;C:\Users\MSI\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.6\groovy-xml-3.0.6.jar;C:\Users\MSI\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\MSI\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\MSI\.m2\repository\org\assertj\assertj-core\3.6.2\assertj-core-3.6.2.jar;C:\Users\MSI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-junit47\3.0.0-M5\surefire-junit47-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\common-java5\3.0.0-M5\common-java5-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\common-junit3\3.0.0-M5\common-junit3-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\common-junit4\3.0.0-M5\common-junit4-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\common-junit48\3.0.0-M5\common-junit48-3.0.0-M5.jar;C:\Users\MSI\.m2\repository\org\apache\maven\surefire\surefire-grouper\3.0.0-M5\surefire-grouper-3.0.0-M5.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.19+7-LTS"/>
+    <property name="user.name" value="MSI"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="webdriver.base.url" value=""/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.19.7.1"/>
+    <property name="localRepository" value="C:\Users\MSI\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MSI\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.1.4"/>
+    <property name="java.version" value="11.0.19"/>
+    <property name="cucumber.filter.tags" value="@gestionOrden"/>
+    <property name="user.dir" value="C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Users\MSI\.jdks\corretto-11.0.19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_361\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;%JAVA_HOME%\bin;C:\Programas\apache-maven-3.9.8\bin;C:\Program Files\Git\cmd;C:\Users\MSI\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\MSI\AppData\Local\Programs\Python\Python311\;C:\Users\MSI\AppData\Local\Microsoft\WindowsApps;C:\Users\MSI\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.19+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Crear orden #1" classname="Gestion de ordenes" time="4.16">
+    <system-out><![CDATA[12:02:22.406 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\serenity.properties 
+
+12:02:22.428 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\serenity.properties 
+
+12:02:22.429 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\serenity.properties 
+
+12:02:22.447 [main] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Serenity and Cucumber QA Innovation Lab
+
+12:02:22.954 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+
+12:02:23.166 [pool-2-thread-1] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\serenity.properties 
+
+12:02:23.175 [pool-2-thread-1] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\serenity.properties 
+
+12:02:23.176 [pool-2-thread-1] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\serenity.properties 
+
+12:02:23.177 [pool-2-thread-1] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Serenity and Cucumber QA Innovation Lab
+
+12:02:23.192 [pool-2-thread-1] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+
+12:02:23.197 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@dcd34268
+
+12:02:23.200 [pool-2-thread-1] INFO  - Test Suite Started: Gestion de ordenes
+
+
+
+10
+ Scenarios (
+&amp#27;[32m10 passed&amp#27;[0m
+)
+
+
+30
+ Steps (
+&amp#27;[32m30 passed&amp#27;[0m
+)
+
+
+0m
+9.641s
+
+
+
+
+
+
+12:02:32.598 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+
+12:02:32.673 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+
+12:02:32.685 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 2 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@500afa3
+
+12:02:32.685 [pool-2-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Consultar orden
+
+12:02:32.685 [pool-2-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@500afa3: Generating report for test outcome: Gestion de ordenes:Consultar orden
+
+12:02:32.685 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Crear orden
+
+12:02:32.685 [pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@500afa3: Generating report for test outcome: Gestion de ordenes:Crear orden
+
+12:02:32.697 [pool-2-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Crear orden to file C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\site\serenity\137e884bb683dd9cda14e7cd27d4107bf23f1804adadc67f6c6b3c9b567768b5.json (using temp file C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\site\serenity\137e884bb683dd9cda14e7cd27d4107bf23f1804adadc67f6c6b3c9b567768b5.json87e3b95a-2eb9-4d1a-96de-38bec66ba987)
+
+12:02:32.697 [pool-2-thread-2] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Consultar orden to file C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\site\serenity\bbffb8b52f332bd164430e59d7791ebf62d45e5f0d8b024f97253492114bd708.json (using temp file C:\Users\MSI\Desktop\QAInnovationLab-automation-api\QAInnovationLab-automation-api\target\site\serenity\bbffb8b52f332bd164430e59d7791ebf62d45e5f0d8b024f97253492114bd708.json95074038-ebb6-44c0-bb78-ebd245d11fca)
+
+12:02:32.758 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Crear orden done
+
+12:02:32.758 [pool-2-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Consultar orden done
+
+12:02:32.761 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+
+12:02:32.762 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 77 ms
+
+12:02:32.763 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 2 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@8fbd914
+
+12:02:32.764 [pool-3-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Crear orden
+
+12:02:32.764 [pool-3-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Consultar orden
+
+12:02:32.764 [pool-3-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@8fbd914: Generating report for test outcome: Gestion de ordenes:Crear orden
+
+12:02:32.765 [pool-3-thread-2] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@8fbd914: Generating report for test outcome: Gestion de ordenes:Consultar orden
+
+12:02:32.807 [pool-3-thread-2] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature Gestion de ordenes
+
+12:02:32.807 [pool-3-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature Gestion de ordenes
+
+12:02:32.814 [pool-3-thread-2] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Consultar orden-[]: Optional[Requirement{name='Gestion de ordenes', type='feature' parent = 'null', cardNumber='null'}]
+
+12:02:32.814 [pool-3-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Crear orden-[]: Optional[Requirement{name='Gestion de ordenes', type='feature' parent = 'null', cardNumber='null'}]
+
+12:02:32.817 [pool-3-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Crear orden-[]: Optional[Requirement{name='Gestion de ordenes', type='feature' parent = 'null', cardNumber='null'}]
+
+12:02:32.817 [pool-3-thread-2] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Consultar orden-[]: Optional[Requirement{name='Gestion de ordenes', type='feature' parent = 'null', cardNumber='null'}]
+
+12:02:33.533 [pool-3-thread-1] DEBUG serenity.reporting - Generating report in 137e884bb683dd9cda14e7cd27d4107bf23f1804adadc67f6c6b3c9b567768b5.html
+
+12:02:33.533 [pool-3-thread-2] DEBUG serenity.reporting - Generating report in bbffb8b52f332bd164430e59d7791ebf62d45e5f0d8b024f97253492114bd708.html
+
+12:02:34.137 [pool-3-thread-1] DEBUG serenity.reporting - Generated report 137e884bb683dd9cda14e7cd27d4107bf23f1804adadc67f6c6b3c9b567768b5.html in 604 ms
+
+12:02:34.137 [pool-3-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Crear orden done
+
+12:02:34.150 [pool-3-thread-2] DEBUG serenity.reporting - Generated report bbffb8b52f332bd164430e59d7791ebf62d45e5f0d8b024f97253492114bd708.html in 617 ms
+
+12:02:34.151 [pool-3-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Gestion de ordenes:Consultar orden done
+
+12:02:34.151 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+
+12:02:34.151 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 1388 ms
+
+12:02:34.457 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI classpath:features/Gestionar_orden.feature
+
+
+@gestionOrden @crearOrden
+Scenario Outline: Crear orden        &amp#27;[90m# features/Gestionar_orden.feature:10&amp#27;[0m
+12:02:23.402 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:23.494 [pool-2-thread-1] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Crear orden(gestion-de-ordenes;crear-orden)
+--------------------------------------------------------------------------------
+12:02:23.567 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Added feature Gestion de ordenes
+12:02:24.006 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.crearOrden - Crear orden {0} en PetStore
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/store/order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899Z",
+    "status": "placed",
+    "complete": true
+}
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:28 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:27.346 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Crear orden {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m        &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.crearOrden(int)&amp#27;[0m
+12:02:27.359 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:27.376 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:27.383 [pool-2-thread-1] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Crear orden
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Crear orden #2" classname="Gestion de ordenes" time="0.564">
+    <system-out><![CDATA[
+@gestionOrden @crearOrden
+Scenario Outline: Crear orden        &amp#27;[90m# features/Gestionar_orden.feature:11&amp#27;[0m
+12:02:27.389 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:27.395 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.crearOrden - Crear orden {0} en PetStore
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/store/order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899Z",
+    "status": "placed",
+    "complete": true
+}
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:29 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:27.939 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Crear orden {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m        &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.crearOrden(int)&amp#27;[0m
+12:02:27.943 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:27.946 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:27.950 [pool-2-thread-1] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Crear orden
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Crear orden #3" classname="Gestion de ordenes" time="0.589">
+    <system-out><![CDATA[
+@gestionOrden @crearOrden
+Scenario Outline: Crear orden        &amp#27;[90m# features/Gestionar_orden.feature:12&amp#27;[0m
+12:02:27.952 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:27.959 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.crearOrden - Crear orden {0} en PetStore
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/store/order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899Z",
+    "status": "placed",
+    "complete": true
+}
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:29 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 3,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:28.509 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Crear orden {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m        &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.crearOrden(int)&amp#27;[0m
+12:02:28.527 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:28.529 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Crear orden #4" classname="Gestion de ordenes" time="0.577">
+    <system-out><![CDATA[
+@gestionOrden @crearOrden
+Scenario Outline: Crear orden        &amp#27;[90m# features/Gestionar_orden.feature:13&amp#27;[0m
+12:02:28.543 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:28.559 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.crearOrden - Crear orden {0} en PetStore
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/store/order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 4,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899Z",
+    "status": "placed",
+    "complete": true
+}
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 4,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:29.110 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Crear orden {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m4&amp#27;[0m        &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.crearOrden(int)&amp#27;[0m
+12:02:29.113 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:29.114 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Crear orden #5" classname="Gestion de ordenes" time="0.546">
+    <system-out><![CDATA[
+@gestionOrden @crearOrden
+Scenario Outline: Crear orden        &amp#27;[90m# features/Gestionar_orden.feature:14&amp#27;[0m
+12:02:29.118 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:29.123 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.crearOrden - Crear orden {0} en PetStore
+Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/store/order
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 5,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899Z",
+    "status": "placed",
+    "complete": true
+}
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 5,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:29.655 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Crear orden {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mcreo la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m5&amp#27;[0m        &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.crearOrden(int)&amp#27;[0m
+12:02:29.659 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:29.659 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar orden #1" classname="Gestion de ordenes" time="0.586">
+    <system-out><![CDATA[
+@gestionOrden @consultarOrden
+Scenario Outline: Consultar orden                                        &amp#27;[90m# features/Gestionar_orden.feature:24&amp#27;[0m
+12:02:29.665 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:29.666 [pool-2-thread-1] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Consultar orden(gestion-de-ordenes;consultar-orden)
+--------------------------------------------------------------------------------
+12:02:29.676 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.laUrlDelServicio - Definir URL base
+12:02:29.676 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Definir URL base
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla url &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://petstore.swagger.io/v2/store/order"&amp#27;[0m&amp#27;[32m del servicio&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.laUrlDelServicio(java.lang.String)&amp#27;[0m
+12:02:29.680 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.consultarOrden - Consultar orden con id {0} en PetStore
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/store/order/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:31 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:30.237 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Consultar orden con id {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mhago la consulta de la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                             &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.consultarOrden(int)&amp#27;[0m
+12:02:30.241 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:30.241 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:30.244 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.imprimirOrden - Imprimir detalles de la orden
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:31 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:30.245 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Imprimir detalles de la orden
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mimprimo la orden&amp#27;[0m                                                   &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.imprimirOrden()&amp#27;[0m
+12:02:30.248 [pool-2-thread-1] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Consultar orden
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar orden #2" classname="Gestion de ordenes" time="0.558">
+    <system-out><![CDATA[
+@gestionOrden @consultarOrden
+Scenario Outline: Consultar orden                                        &amp#27;[90m# features/Gestionar_orden.feature:25&amp#27;[0m
+12:02:30.251 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:30.258 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.laUrlDelServicio - Definir URL base
+12:02:30.258 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Definir URL base
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla url &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://petstore.swagger.io/v2/store/order"&amp#27;[0m&amp#27;[32m del servicio&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.laUrlDelServicio(java.lang.String)&amp#27;[0m
+12:02:30.263 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.consultarOrden - Consultar orden con id {0} en PetStore
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/store/order/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:30.795 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Consultar orden con id {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mhago la consulta de la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m                             &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.consultarOrden(int)&amp#27;[0m
+12:02:30.799 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:30.799 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:30.802 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.imprimirOrden - Imprimir detalles de la orden
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:30.804 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Imprimir detalles de la orden
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mimprimo la orden&amp#27;[0m                                                   &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.imprimirOrden()&amp#27;[0m
+12:02:30.807 [pool-2-thread-1] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Consultar orden
+----------------------------------------------------------------------
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar orden #3" classname="Gestion de ordenes" time="0.586">
+    <system-out><![CDATA[
+@gestionOrden @consultarOrden
+Scenario Outline: Consultar orden                                        &amp#27;[90m# features/Gestionar_orden.feature:26&amp#27;[0m
+12:02:30.809 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:30.814 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.laUrlDelServicio - Definir URL base
+12:02:30.814 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Definir URL base
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla url &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://petstore.swagger.io/v2/store/order"&amp#27;[0m&amp#27;[32m del servicio&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.laUrlDelServicio(java.lang.String)&amp#27;[0m
+12:02:30.817 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.consultarOrden - Consultar orden con id {0} en PetStore
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/store/order/3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 3,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:31.362 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Consultar orden con id {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mhago la consulta de la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m                             &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.consultarOrden(int)&amp#27;[0m
+12:02:31.373 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:31.376 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:31.387 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.imprimirOrden - Imprimir detalles de la orden
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 3,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:31.389 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Imprimir detalles de la orden
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mimprimo la orden&amp#27;[0m                                                   &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.imprimirOrden()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar orden #4" classname="Gestion de ordenes" time="0.599">
+    <system-out><![CDATA[
+@gestionOrden @consultarOrden
+Scenario Outline: Consultar orden                                        &amp#27;[90m# features/Gestionar_orden.feature:27&amp#27;[0m
+12:02:31.395 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:31.401 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.laUrlDelServicio - Definir URL base
+12:02:31.401 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Definir URL base
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla url &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://petstore.swagger.io/v2/store/order"&amp#27;[0m&amp#27;[32m del servicio&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.laUrlDelServicio(java.lang.String)&amp#27;[0m
+12:02:31.406 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.consultarOrden - Consultar orden con id {0} en PetStore
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/store/order/4
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 4,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:31.959 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Consultar orden con id {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mhago la consulta de la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m4&amp#27;[0m                             &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.consultarOrden(int)&amp#27;[0m
+12:02:31.971 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:31.972 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:31.983 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.imprimirOrden - Imprimir detalles de la orden
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 4,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:31.985 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Imprimir detalles de la orden
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mimprimo la orden&amp#27;[0m                                                   &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.imprimirOrden()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Consultar orden #5" classname="Gestion de ordenes" time="0.597">
+    <system-out><![CDATA[
+@gestionOrden @consultarOrden
+Scenario Outline: Consultar orden                                        &amp#27;[90m# features/Gestionar_orden.feature:28&amp#27;[0m
+12:02:31.995 [pool-2-thread-1] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from classpath:features/Gestionar_orden.feature
+12:02:32.006 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.laUrlDelServicio - Definir URL base
+12:02:32.007 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Definir URL base
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla url &amp#27;[0m&amp#27;[32m&amp#27;[1m"https://petstore.swagger.io/v2/store/order"&amp#27;[0m&amp#27;[32m del servicio&amp#27;[0m &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.laUrlDelServicio(java.lang.String)&amp#27;[0m
+12:02:32.015 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.consultarOrden - Consultar orden con id {0} en PetStore
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/store/order/5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 5,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:32.563 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Consultar orden con id {0} en PetStore
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mhago la consulta de la orden con id &amp#27;[0m&amp#27;[32m&amp#27;[1m5&amp#27;[0m                             &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.consultarOrden(int)&amp#27;[0m
+12:02:32.572 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.elCodigoDeRespuestaEs - Validar el código de respuesta {0}
+12:02:32.573 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Validar el código de respuesta {0}
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel codigo de respuesta es &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.elCodigoDeRespuestaEs(int)&amp#27;[0m
+12:02:32.580 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STARTING STEP: OrdenStepsDefs.imprimirOrden - Imprimir detalles de la orden
+HTTP/1.1 200 OK
+Date: Wed, 28 Aug 2024 17:02:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 5,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-08-28T13:12:00.899+0000",
+    "status": "placed",
+    "complete": true
+}
+12:02:32.581 [pool-2-thread-1] DEBUG net.thucydides.core.steps.StepInterceptor - STEP DONE: Imprimir detalles de la orden
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mimprimo la orden&amp#27;[0m                                                   &amp#27;[90m# com.nttdata.glue.OrdenStepsDefs.imprimirOrden()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

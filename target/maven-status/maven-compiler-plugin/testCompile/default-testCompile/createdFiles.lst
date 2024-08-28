@@ -1,0 +1,4 @@
+com\nttdata\steps\OrdenStep.class
+com\nttdata\CucumberTestSuite.class
+com\nttdata\steps\ArticuloStep.class
+com\nttdata\glue\OrdenStepsDefs.class

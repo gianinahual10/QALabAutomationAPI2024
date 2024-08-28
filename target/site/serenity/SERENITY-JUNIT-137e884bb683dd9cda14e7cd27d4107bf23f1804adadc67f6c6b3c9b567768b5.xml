@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Gestion de ordenes" skipped="0" tests="10" time="9.09" timestamp="2024-08-28 12:02:23"><testcase name="Crear orden"/><testcase name="Consultar orden"/></testsuite>
